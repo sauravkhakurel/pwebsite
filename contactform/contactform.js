@@ -96,8 +96,14 @@ jQuery(document).ready(function($) {
     }
     $.ajax({
       type: "POST",
-      url: action,
-      data: str,
+      url: "contactform/contactform.php",
+      data: {
+        name: name,
+        email: email,
+        subject: subject,
+        message: message,
+      },
+      cache: false,
       success: function(msg) {
         // alert(msg);
         if (msg == 'OK') {
