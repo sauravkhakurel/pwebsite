@@ -12,7 +12,7 @@
   // Preloader
   $(window).on('load', function () {
     if ($('#preloader').length) {
-      $('#preloader').delay(100).fadeOut('slow', function () {
+      $('#preloader').delay(50).fadeOut('slow', function () {
         $(this).remove();
       });
     }
@@ -40,7 +40,7 @@
 
 	/*--/ Star Counter /--*/
 	$('.counter').counterUp({
-		delay: 10,
+		delay: 5,
 		time: 2000
 	});
 
